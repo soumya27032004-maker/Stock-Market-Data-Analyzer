@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "ticker": "DEMO_AAPL",
+    "source": "sample",
+    "first_date": "2024-01-02",
+    "last_date": "2026-11-20",
+    "rows": 754,
+    "first_adj_close": 140.051421,
+    "last_adj_close": 64.604739,
+    "price_change_pct": -53.87070081923696,
+    "daily_avg_return_pct": -0.09403605131587021,
+    "annual_volatility_pct": 20.90094441725899,
+    "highest_raw_high": 141.108831,
+    "lowest_raw_low": 50.531093,
+    "sma20": 62.15740695000001,
+    "sma50": 63.99579678,
+    "rsi14": 58.99978970648893,
+    "trend_observation": "Above SMA20 & SMA50",
+    "latest_crossover": "CROSS_DOWN",
+    "currency_note": "Use the original ticker exchange/currency; synthetic demo units are arbitrary.",
+    "warning": "Educational historical analysis, not investment advice. Past results do not predict future returns."
+  },
+  "backtest": {
+    "first_date": "2024-03-11",
+    "last_date": "2026-11-20",
+    "total_return": -0.39279973063339346,
+    "buy_hold_return": -0.4588084555093235,
+    "max_drawdown": -0.40202866918590496,
+    "sharpe": -1.4226441469364872,
+    "trades": 8,
+    "closed_trades": 8,
+    "win_rate": 0.125,
+    "fee_bps": 5.0,
+    "slippage_bps": 2.0,
+    "note": "Simplified close-to-close simulation, delayed signal, no taxes/market impact. Educational only."
+  }
+}

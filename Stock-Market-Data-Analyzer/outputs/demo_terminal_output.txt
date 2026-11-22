@@ -1,0 +1,12 @@
+
+SUCCESS | DEMO_AAPL | sample | 754 rows
+Dates: 2024-01-02 to 2026-11-20
+Price change: -53.87%
+Annualized volatility: 20.90%
+Backtest return: -39.28% | Buy & hold: -45.88%
+Analysis CSV: outputs/DEMO_AAPL_analysis.csv
+Report: reports/DEMO_AAPL_report.md
+Chart: outputs/charts/DEMO_AAPL_price.png
+Chart: outputs/charts/DEMO_AAPL_moving_averages.png
+Chart: outputs/charts/DEMO_AAPL_daily_returns.png
+DISCLAIMER: Synthetic data in sample mode; not financial advice.

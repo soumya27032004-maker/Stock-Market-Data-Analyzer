@@ -1,0 +1,78 @@
+STOCK MARKET DATA ANALYZER - EASY START (WINDOWS)
+=================================================
+
+YOUR GOAL: Run the project and see real charts from fake practice prices.
+No paid account or market-data subscription is needed for the first run.
+
+STEP 1 - DOWNLOAD AND UNZIP
+  Download Stock-Market-Data-Analyzer.zip from ChatGPT.
+  Open your Downloads folder.
+  Right-click the ZIP file and click "Extract All".
+  Click "Extract". A normal folder will appear.
+  Open the folder called Stock-Market-Data-Analyzer.
+  IMPORTANT: Do not try to run files while they are inside a ZIP preview.
+
+STEP 2 - INSTALL PYTHON (ONLY ONCE)
+  Open: https://www.python.org/downloads/windows/
+  Install Python 3.11 or 3.12 (3.13 is also supported by most packages).
+  On the install screen, check "Add python.exe to PATH" if shown.
+  Then restart your computer or close/reopen Command Prompt.
+
+STEP 3 - RUN (DOUBLE CLICK, NO TYPING)
+  Inside your extracted project folder, double-click start_windows.bat
+  A black window should open. This is normal: it runs the code.
+  The first run installs free Python libraries and therefore needs internet.
+  After the installation, it automatically runs an OFFLINE sample analysis.
+  Do not close the black window during installation.
+  When you see SUCCESS, the analyzer has finished.
+
+STEP 4 - SEE THE RESULT
+  Open the folder named reports and double-click DEMO_AAPL_report.md
+    (Open with Notepad if Windows asks.)
+  Open outputs -> charts and double-click the three PNG chart files.
+  Open outputs and find DEMO_AAPL_analysis.csv (Excel can open CSV).
+
+STEP 5 - OPEN YOUR DASHBOARD
+  Double-click dashboard_windows.bat
+  A browser should open at http://localhost:8501
+  If it does not, type http://localhost:8501 in your browser address bar.
+  In the dashboard, click "Load & analyze".
+
+WHAT IF "PYTHON WAS NOT FOUND" APPEARS?
+  Python is not correctly installed or available in Windows PATH.
+  1. Install official Python from python.org (not the Microsoft Store alias).
+  2. In Windows Settings -> Apps -> Advanced app settings ->
+     App execution aliases, turn OFF python.exe and python3.exe store aliases
+     if they are intercepting real Python.
+  3. Close Command Prompt and open it again.
+  4. Check: py -3 --version
+     If that fails, check: python --version
+  5. If both commands fail, reinstall Python and enable PATH.
+  6. Double-click start_windows.bat again.
+
+WHAT IF THE BLACK WINDOW DISAPPEARS?
+  In File Explorer, open your extracted project folder.
+  Click the address bar: the long white box at the TOP showing the folder path.
+  Erase that text. Type cmd and press Enter.
+  A black Command Prompt window opens in the correct folder.
+  Type start_windows.bat and press Enter. Read any error messages.
+
+FOR MAC/LINUX
+  Open Terminal in the extracted project folder.
+  Run: bash start_mac_linux.sh
+  Then: source .venv/bin/activate
+  Then: streamlit run dashboard.py
+
+TO USE A REAL PUBLIC-DATA SYMBOL LATER
+  Inside the project folder, open a terminal and activate .venv.
+  Windows: .venv\Scripts\activate
+  Mac/Linux: source .venv/bin/activate
+  Type: python main.py --source yahoo --ticker AAPL --start 2024-01-01
+  Or: python main.py --source yahoo --ticker RELIANCE.NS --start 2024-01-01
+  Yahoo Finance availability is not guaranteed and prices may be delayed.
+
+GITHUB
+  Read docs/GITHUB_UPLOAD_FOR_BEGINNERS.md for very easy instructions.
+
+DISCLAIMER: Educational project only. The DEMO data are synthetic.
+This is NOT financial advice or a real trading platform.
